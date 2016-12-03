@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #FFF0D6;
+  --primary-color-light: #FFF9EF;
+  --primary-color-dark: #B2A184;
+  --complimentary-color: #D6EAFF;
+  --complimentary-color-medium: #A3D0FF;
+  --complimentary-color-dark: #7292B2;
+}
+
+html, body, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, input, textarea, button {
+  font: menu;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+#content {
+  flex: 1 1 auto;
+  padding: 1em;
+  background-color: var(--primary-color-light);
+  resize: none;
+  height: 84vh;
+}
+
+#statistics, #controls {
+  flex: 0 0 auto;
+  align-self: auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: align-content;
+  align-items: center;
+  color: var(--primary-color-dark);
+  height: 8vh;
+}
+
+.text-statistic-label:not(:first-child) {
+  padding-left: 10vw;
+}
+
+.text-statistic {
+  padding-left: 0.5em;
+}
+
+#controls {
+  padding: 1em;
+}
+
+.control-button {
+  background-color: var(--complimentary-color);
+  padding: 0.5em;
+  margin: 0 1em;
+  width: 30vw;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+.control-button:hover {
+  background-color: var(--complimentary-color-medium);
+}
+
+.control-button:active {
+  background-color: var(--complimentary-color-dark);
+  border-color: var(--complementary-color-light);
+}
