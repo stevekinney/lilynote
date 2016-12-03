@@ -1,0 +1,20 @@
+{
+  "name": "lilynote",
+  "version": "1.0.0",
+  "description": "A small Electron application for writing text and counting words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevekinney/lilynote.git"
+  },
+  "keywords": [],
+  "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevekinney/lilynote/issues"
+  },
+  "homepage": "https://github.com/stevekinney/lilynote#readme"
+}
