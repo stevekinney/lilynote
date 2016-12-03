@@ -1,4 +1,4 @@
-const getTextStatistics = require('./lib/get-statistics');
+const getTextStatistics = require('./lib/generate-statistics');
 
 const content = document.getElementById('content');
 const lineCount = document.getElementById('line-count');

@@ -37,7 +37,7 @@ body {
   padding: 1em;
   background-color: var(--primary-color-light);
   resize: none;
-  height: 84vh;
+  height: calc(100vh - 5em);
 }
 
 #statistics, #controls {
@@ -48,7 +48,10 @@ body {
   align-content: align-content;
   align-items: center;
   color: var(--primary-color-dark);
-  height: 8vh;
+}
+
+#statistics {
+  height: 2em;
 }
 
 .text-statistic-label:not(:first-child) {
@@ -61,10 +64,13 @@ body {
 
 #controls {
   padding: 1em;
+  height: 3em;
 }
 
 .control-button {
-  background-color: var(--complimentary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color-dark);
+  color: var(--primary-color-dark);
   padding: 0.5em;
   margin: 0 1em;
   width: 30vw;
@@ -73,10 +79,13 @@ body {
 }
 
 .control-button:hover {
-  background-color: var(--complimentary-color-medium);
+  background-color: var(--complimentary-color);
+  border-color: var(--complimentary-color-dark);
+  color: var(--complimentary-color-dark);
 }
 
 .control-button:active {
   background-color: var(--complimentary-color-dark);
-  border-color: var(--complementary-color-light);
+  border-color: var(--complimentary-color);
+  color: var(--complimentary-color);
 }
